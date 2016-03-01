@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<script src="../framework/jquery-2.1.4.min.js"></script>
+	<script src="../framework/jquery-ui.min.js"></script>
+	<script src="../framework/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../framework/jquery-ui.min.css">
+	<link rel="stylesheet" href="../framework/bootstrap.min.css">
+
+	<script src="Grid.js"></script>
+	<link rel="stylesheet" href="Grid.css">
+
+</head>
+<body>
+	<div id="info1" class="infoDiv">
+		<!-- <h3 class="infoTitle">Shortest Path<br> Search System</h3> -->
+		<p class="infoText">输入迷宫网格大小</p>
+		<form class="form-inline">
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="mazex" placeholder="x方向格子数">
+		  </div>
+		  <br>
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="mazey" placeholder="y方向格子数">
+		  </div>
+		</form>	
+		<div><button id="createGrid" class="btn btn-primary">生成网格</button></div>
+		<div class="part">
+			<p class="infoText">选择最短路径搜索算法</p>
+			<select id='algorithmOption' class="form-control">
+				<option value="Astar">A*</option>
+				<option value="BFS">BFS</option>
+			</select>
+			<button id="createPath" class="btn btn-success">生成路径</button>
+		</div>
+
+	</div>
+	<div id="info2" class="infoDiv">
+		<div class="ActionBtn">
+			<!-- <button id="createGrid" class="btn btn-primary">生成网格</button><br> -->
+			<button id="clearPath" class="btn btn-info">清除路径</button>
+			<button id="clearBlock" class="btn btn-warning">清除障碍</button>
+		</div>	
+	</div>
+	<div id='result' class="infoDiv">
+		<p><span>运行时间:</span><span id="executionTime">ms</span></p>
+<!-- 		<p><span>路径长度:</span><span></span></p>
+		<p><span>访问方格个数:</span></p> -->
+	</div>
+<!-- 	<div id="info2">
+		<p class="infoText">请先输入起点坐标和终点坐标</p>
+		<form class="form-inline">
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="startX" placeholder="起点x坐标">
+		  </div>
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="startY" placeholder="起点y坐标">
+		  </div>
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="endX" placeholder="终点x坐标">
+		  </div>
+		  <div class="form-group">
+		    <input type="text" class="form-control" id="endY" placeholder="终点y坐标">
+		  </div>
+		</form>
+	</div> -->
+	<div id="canvas">
+		<div id="startDiv"><p class="SAEtext">起点</p></div> <!-- 起点div -->
+		<div id="endDiv"><p class="SAEtext">终点</p></div>	<!-- 终点div -->
+	</div>
+
+</body>
+</html>

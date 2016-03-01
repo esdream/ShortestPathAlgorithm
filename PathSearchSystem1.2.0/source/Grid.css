@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+/*创建出的网格的基本样式*/
+.Grid {
+	height: 20px;
+	width: 20px;
+	float: left;
+	background: #FF9999;
+	border: solid 1px black;
+}
+
+.infoDiv {
+	box-shadow: 5px 5px 5px #888;
+}
+/*信息输入框的css样式*/
+#info1 {
+/*	background: #ccc;*/	
+/*	height: 80px;
+*/	
+	padding: 5px;
+	background: #333;
+	position: absolute;
+	border-radius: 10px;
+	width: auto;
+	right: 20px;
+	top: 20px;
+	z-index: 90;
+	opacity: 0.6;
+	transition: opacity 0.5s;
+	cursor: move;
+
+}
+#info1:hover {
+	opacity: 1;
+}
+#info1 * {
+	margin: 3px;
+}
+
+#info2 {
+/*	background: #ccc;*/	
+/*	height: 80px;
+*/	
+	border-radius: 10px;
+	background: #333;
+	position: absolute;
+	width: auto;
+	right: 20px;
+	top: 220px;
+	z-index: 90;
+	opacity: 0.6;
+	transition: opacity 0.5s;
+	cursor: move;
+}
+#info2:hover {
+	opacity: 1;
+}
+
+#info2 * {
+	margin: 5px;
+}
+
+/*计算结果div的样式*/
+#result {
+	border-radius: 10px;
+	background: #333;
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+	width: auto;
+	z-index: 90;
+	transition: opacity 0.5s;
+	cursor: move;
+}
+
+#result * {
+	margin: 5px;
+	color: white;
+}
+
+#createGrid {	
+	margin-left: 65px;
+}
+
+#startDiv {
+	width: 30px;
+	height: 30px;
+	background: #0066CC;
+	position: absolute;
+	left: 550px;
+	top: 10px;
+	z-index: 110;
+	cursor: move;
+}
+
+#endDiv {
+	width: 30px;
+	height: 30px;
+	background: #993333;
+	position: absolute;
+	left: 600px;
+	top: 10px;
+	z-index: 110;
+	cursor: move;
+}
+
+/*画布的css样式*/
+#canvas {
+/*	height: 1000px;
+	width: 1600px;*/
+	height: 16000px;
+	width: 16000px;
+	background: #FFFFCC;
+	position: absolute;
+	z-index: -10;
+	overflow: auto;
+/*	left: 100px;
+	top: 100px;*/
+}
+
+.interval {
+	height: 10px;
+}
+
+
+/*创建的网格在画布中居中的方法*/
+#container {
+	position: absolute;
+	top: 50px;
+	left: 10px;
+/*	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);*/
+}
+
+/*障碍单元的css样式*/
+.blockClass { 
+	background: gray;
+}
+
+/*通过路径的css样式*/
+.pathTrace {
+	background: yellow;
+}
+
+.infoTitle {
+	color: white;
+	font-weight: bold;
+}
+/*信息标签中的正文*/
+.infoText {  
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.startPoint {
+	background: #0066CC;
+}
+
+.endPoint {
+	background: #993333;
+}
+
+.hiddenGrid {
+	visibility: hidden;
+}
+
+.SAEtext {
+	color: white;
+	font-size: 8px;
+	text-align: center;
+	margin-top: 3px;
+}
+
+.showGird {
+
+}
